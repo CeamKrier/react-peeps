@@ -1,49 +1,90 @@
-# react-npm-boilerplate
 
-A brief introduction of your package goes here
+# react-peeps
+
+React implementation of the hand drawn illustration library called [Open Peeps](https://www.openpeeps.com/)
+
+<p align="center"><img src="example.png" alt="peeps example" width="200"/></p>
 
 ## Installation
 
 ```
-npm install your-lib-name
+npm install react-peeps
 ```
+
 
 ## Usage
 
 ```javascript
 import React from 'react'
-import LibName from 'your-lib-name'
+import ReactDOM from 'react-dom'
+import Peep, {
+	Accessories,
+	Body,
+	Face,
+	FacialHair,
+	Hair,
+	CirclePeep
+} from 'react-peeps'
 
-const App = () => {
+const styles = {
+  peepStyle: {
+    width: 300,
+    height: 300,
+    justifyContent: 'center',
+    alignSelf: 'center'
+  },
+  circleStyle: {
+    backgroundColor: '#F3D34A',
+    width: 270,
+    height: 270,
+    alignSelf: 'center',
+    borderRadius: 135,
+    overflow: 'hidden',
+    borderWidth: 3,
+    borderColor: 'black',
+    borderStyle: 'solid'
+  },
+  showcaseWrapper: {
+    display: 'flex',
+    justifyContent: 'center',
+    height: '-webkit-fill-available'
+  }
+}
 
+const Showcase: React.FC = () => {
   return (
-        <LibName 
-          text={text}
-         />
+    <div style={styles.showcaseWrapper}>
+      <Peep
+        style={styles.peepStyle}
+        accessory={Accessories.GlassRoundThick}
+        body={Body.PointingUp}
+        face={Face.Cute}
+        hair={Hair.Long}
+      />
+
+      <CirclePeep
+        style={styles.peepStyle}
+        accessory={Accessories.GlassRoundThick}
+        body={Body.PointingUp}
+        face={Face.Cute}
+        hair={Hair.Long}
+        circleStyle={styles.circleStyle}
+        viewBox={{x: '0', y: '0', width: '1050', height: '1200'}}
+      />
+    </div>
   )
 }
+
+ReactDOM.render(<Showcase />, document.getElementById('main'))
 
 ```
 
 
-## API
-
-| Attribute  | Type       | Description          | Required |
-|------------|------------|----------------------|----------|
-| `attOne`   | `string`   | Text to be displayed | **Yes**  |
-| `attTwo`   | `function` | Callback function    | **Yes**  |
-| `attThree` | `boolean`  | Toggle something     | No       |
-
-
-## Features
-Express your neat features down below for further clarification of your component's way of working.
-
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Please make sure to update tests as appropriate.
 Thanks :raised_hands:
 
 
 ## License
-[GPL](https://choosealicense.com/licenses/gpl-3.0/)
+[MIT]([https://choosealicense.com/licenses/mit/](https://choosealicense.com/licenses/mit/))
