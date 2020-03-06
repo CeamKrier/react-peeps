@@ -10,7 +10,9 @@ React implementation of the hand drawn illustration library called [Open Peeps](
 ```
 npm install react-peeps
 ```
+</br>
 
+[![Edit react-peeps-playground](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/react-peeps-playground-mbtlj?fontsize=14&hidenavigation=1&theme=dark)
 
 ## Usage
 
