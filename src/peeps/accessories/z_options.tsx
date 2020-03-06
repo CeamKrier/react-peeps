@@ -11,8 +11,8 @@ export const Accessories = {
 }
 
 export interface AccessoryType {
-  Eyepatch: React.Component;
-  GlassRoundThick: React.Component;
-  SunglassClubmaster: React.Component;
-  SunglassWayfarer: React.Component;
+  Eyepatch: React.ElementType;
+  GlassRoundThick: React.ElementType;
+  SunglassClubmaster: React.ElementType;
+  SunglassWayfarer: React.ElementType;
 }

@@ -67,6 +67,7 @@
       "forceConsistentCasingInFileNames": true  /* Disallow inconsistently-cased references to the same file. */
   },
   "exclude": [
-    "src/dev/*"                                 /* Excludes the dev folder content from compilation */
+    "src/dev/*",                                /* Excludes the dev folder content from compilation */
+    "src/css/*"                                 /* Excludes the styling folder content from compilation */
   ]
 }
