@@ -5,9 +5,4 @@ export declare const Accessories: {
     SunglassClubmaster: () => JSX.Element;
     SunglassWayfarer: () => JSX.Element;
 };
-export interface AccessoryType {
-    Eyepatch: React.ElementType;
-    GlassRoundThick: React.ElementType;
-    SunglassClubmaster: React.ElementType;
-    SunglassWayfarer: React.ElementType;
-}
+export declare type AccessoryType = 'Eyepatch' | 'GlassRoundThick' | 'SunglassClubmaster' | 'SunglassWayfarer';

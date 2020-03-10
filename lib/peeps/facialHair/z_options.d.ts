@@ -15,19 +15,4 @@ export declare const FacialHair: {
     MoustacheThin: () => JSX.Element;
     MoustacheYosemite: () => JSX.Element;
 };
-export interface FacialHairType {
-    Chin: React.ElementType;
-    Full: React.ElementType;
-    FullMajestic: React.ElementType;
-    FullMedium: React.ElementType;
-    Goatee: React.ElementType;
-    GoateeCircle: React.ElementType;
-    MoustacheDali: React.ElementType;
-    MoustacheHandlebar: React.ElementType;
-    MoustacheImperial: React.ElementType;
-    MoustachePainters: React.ElementType;
-    MoustachePaintersFilled: React.ElementType;
-    MoustacheSwashbuckler: React.ElementType;
-    MoustacheThin: React.ElementType;
-    MoustacheYosemit: React.ElementType;
-}
+export declare type FacialHairType = 'Chin' | 'Full' | 'FullMajestic' | 'FullMedium' | 'Goatee' | 'GoateeCircle' | 'MoustacheDali' | 'MoustacheHandlebar' | 'MoustacheImperial' | 'MoustachePainters' | 'MoustachePaintersFilled' | 'MoustacheSwashbuckler' | 'MoustacheThin' | 'MoustacheYosemite';

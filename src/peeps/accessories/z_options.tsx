@@ -10,9 +10,8 @@ export const Accessories = {
   SunglassWayfarer
 }
 
-export interface AccessoryType {
-  Eyepatch: React.ElementType;
-  GlassRoundThick: React.ElementType;
-  SunglassClubmaster: React.ElementType;
-  SunglassWayfarer: React.ElementType;
-}
+export type AccessoryType =
+| 'Eyepatch'
+| 'GlassRoundThick'
+| 'SunglassClubmaster'
+| 'SunglassWayfarer';

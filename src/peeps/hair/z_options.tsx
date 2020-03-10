@@ -72,40 +72,39 @@ export const Hair = {
   ShortWavy
 }
 
-export interface HairType {
-  Afro: React.ElementType;
-  Bald: React.ElementType;
-  BaldSides: React.ElementType;
-  BaldTop: React.ElementType;
-  Bangs: React.ElementType;
-  BangsFilled: React.ElementType;
-  Bear: React.ElementType;
-  Bun: React.ElementType;
-  BunCurly: React.ElementType;
-  Buns: React.ElementType;
-  FlatTop: React.ElementType;
-  FlatTopLong: React.ElementType;
-  HatHip: React.ElementType;
-  Long: React.ElementType;
-  LongAfro: React.ElementType;
-  LongBangs: React.ElementType;
-  LongCurly: React.ElementType;
-  Medium: React.ElementType;
-  MediumBangs: React.ElementType;
-  MediumBangsFilled: React.ElementType;
-  MediumLong: React.ElementType;
-  MediumShort: React.ElementType;
-  MediumStraight: React.ElementType;
-  Mohawk: React.ElementType;
-  MohawkDino: React.ElementType;
-  Pomp: React.ElementType;
-  ShavedRight: React.ElementType;
-  ShavedSides: React.ElementType;
-  ShavedWavy: React.ElementType;
-  Short: React.ElementType;
-  ShortCurly: React.ElementType;
-  ShortMessy: React.ElementType;
-  ShortScratch: React.ElementType;
-  ShortVolumed: React.ElementType;
-  ShortWav: React.ElementType;
-}
+export type HairType =
+| 'Afro'
+| 'Bald'
+| 'BaldSides'
+| 'BaldTop'
+| 'Bangs'
+| 'BangsFilled'
+| 'Bear'
+| 'Bun'
+| 'BunCurly'
+| 'Buns'
+| 'FlatTop'
+| 'FlatTopLong'
+| 'HatHip'
+| 'Long'
+| 'LongAfro'
+| 'LongBangs'
+| 'LongCurly'
+| 'Medium'
+| 'MediumBangs'
+| 'MediumBangsFilled'
+| 'MediumLong'
+| 'MediumShort'
+| 'MediumStraight'
+| 'Mohawk'
+| 'MohawkDino'
+| 'Pomp'
+| 'ShavedRight'
+| 'ShavedSides'
+| 'ShavedWavy'
+| 'Short'
+| 'ShortCurly'
+| 'ShortMessy'
+| 'ShortScratch'
+| 'ShortVolumed'
+| 'ShortWavy';
