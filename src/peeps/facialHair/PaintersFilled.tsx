@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const MoustachePaintersFilled = () => {
+export const PaintersFilled = () => {
   return (
     <g id='facial-hair/Moustache-6'>
       <path

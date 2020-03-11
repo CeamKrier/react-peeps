@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const MoustacheHandlebar = () => {
+export const Handlebars = () => {
   return (
     <g id='facial-hair/Moustache-3'>
       <path

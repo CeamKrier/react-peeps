@@ -9,7 +9,8 @@
     "prebuild": "rimraf lib",
     "build": "tsc -d",
     "prebump": "npm run build",
-    "bump": "npm version patch -f -m \"chore: version bumped to %s\""
+    "bump": "npm version patch -f -m \"chore: version bumped to %s\"",
+    "postbump": "git push && npm publish"
   },
   "repository": {
     "type": "git",

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const MoustacheDali = () => {
+export const Dali = () => {
   return (
     <g id='facial-hair/Moustache-4'>
       <path

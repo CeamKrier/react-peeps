@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const MoustacheYosemite = () => {
+export const Yosemite = () => {
   return (
     <g id='facial-hair/Moustache-2'>
       <path
