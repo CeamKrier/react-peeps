@@ -2,14 +2,14 @@ import React, { CSSProperties } from 'react'
 // import '../src/css/index.css' // relative to the lib folder
 import Head from './head'
 
-export { Body } from './body/z_options'
-export { Hair } from './hair/z_options'
-export { Accessories } from './accessories/z_options';
-export { Face } from './face/z_options';
-export { FacialHair } from './facialHair/z_options';
+export { Body, BodyType } from './body/z_options'
+export { Hair, HairType } from './hair/z_options'
+export { Accessories, AccessoryType } from './accessories/z_options';
+export { Face, FaceType } from './face/z_options';
+export { FacialHair, FacialHairType } from './facialHair/z_options';
 
-import { Body, BodyType } from './body/z_options'
-import { Hair, HairType } from './hair/z_options'
+import { BodyType } from './body/z_options'
+import { HairType } from './hair/z_options'
 import { AccessoryType } from './accessories/z_options';
 import { FaceType } from './face/z_options';
 import { FacialHairType } from './facialHair/z_options';
