@@ -7,7 +7,9 @@
   "scripts": {
     "dev": "webpack-dev-server --config ./webpack.config.js --inline --hot --port 2000",
     "prebuild": "rimraf lib",
-    "build": "tsc -d"
+    "build": "tsc -d",
+    "prebump": "npm run build",
+    "bump:up": "npm version --force -m \"chore: version bumped to %s\""
   },
   "repository": {
     "type": "git",
