@@ -2,7 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Peep, {
 	Accessories,
-	Body,
+	BustPose,
+	StandingPose,
+	SittingPose,
 	Face,
 	FacialHair,
 	Hair,
@@ -14,7 +16,8 @@ const styles = {
 		width: 300,
 		height: 300,
 		justifyContent: 'center',
-		alignSelf: 'center'
+		alignSelf: 'center',
+		overflow: 'initial'
 	},
 	circleStyle: {
 		backgroundColor: '#F3D34A',
@@ -40,17 +43,17 @@ const Showcase: React.FC = () => {
 			<Peep
 				style={styles.peepStyle}
 				accessory={Accessories.GlassRoundThick}
-				body={Body.PointingUp}
+				body={StandingPose.EasingBW}
 				face={Face.Cute}
-				hair={Hair.Long}
+				hair={Hair.ShortVolumed}
 			/>
 
 			<CirclePeep
 				style={styles.peepStyle}
 				accessory={Accessories.GlassRoundThick}
-				body={Body.PointingUp}
+				body={StandingPose.EasingBW}
 				face={Face.Cute}
-				hair={Hair.Long}
+				hair={Hair.ShortVolumed}
 				circleStyle={styles.circleStyle}
 				viewBox={{x: '0', y: '0', width: '1050', height: '1200'}}
 			/>

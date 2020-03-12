@@ -21,7 +21,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import Peep, {
 	Accessories,
-	Body,
+	BustPose,
 	Face,
 	FacialHair,
 	Hair,
@@ -59,7 +59,7 @@ const Showcase: React.FC = () => {
       <Peep
         style={styles.peepStyle}
         accessory={Accessories.GlassRoundThick}
-        body={Body.PointingUp}
+        body={BustPose.PointingUp}
         face={Face.Cute}
         hair={Hair.Long}
       />
@@ -67,7 +67,7 @@ const Showcase: React.FC = () => {
       <CirclePeep
         style={styles.peepStyle}
         accessory={Accessories.GlassRoundThick}
-        body={Body.PointingUp}
+        body={BustPose.PointingUp}
         face={Face.Cute}
         hair={Hair.Long}
         circleStyle={styles.circleStyle}
