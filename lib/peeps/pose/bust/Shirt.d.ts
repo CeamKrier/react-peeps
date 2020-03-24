@@ -1,2 +1,5 @@
-/// <reference types="react" />
-export declare const Shirt: () => JSX.Element;
+import React from 'react';
+export declare const Shirt: React.FC<{
+    strokeColor?: string;
+    backgroundColor?: string;
+}>;

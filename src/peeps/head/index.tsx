@@ -1,27 +1,68 @@
-import React from 'react'
+import React from 'react';
+
+import { HairType } from '../hair/z_options';
+import { FaceType } from '../face/z_options';
+import { FacialHairType } from '../facialHair/z_options';
+import { AccessoryType } from '../accessories/z_options';
+
+import Hair from '../hair';
+import Face from '../face';
+import FacialHair from '../facialHair';
+import Accessory from '../accessories';
 
 interface HeadProps {
-  hair?: React.ElementType;
-  face?: React.ElementType;
-  facialHair?: React.ElementType;
-  accessory?: React.ElementType;
+	hairPiece?: HairType;
+	facePiece?: FaceType;
+	facialHairPiece?: FacialHairType;
+	accessoryPiece?: AccessoryType;
+	strokeColor?: string;
+	backgroundColor?: string;
 }
 
-const index: React.FC<HeadProps> = ({ hair, face, facialHair, accessory }) => {
-  return (
-    <g id='Head' transform='translate(225 0)'>
-      <g id='HAIR'>{hair && React.createElement(hair)}</g>
-      <g id='FACE' transform='translate(159 186)'>
-        {face && React.createElement(face)}
-      </g>
-      <g id='FACIAL-HAIR' transform='translate(123 338)'>
-        {facialHair && React.createElement(facialHair)}
-      </g>
-      <g id='ACCESORIES' transform='translate(47 241)'>
-        {accessory && React.createElement(accessory)}
-      </g>
-    </g>
-  )
-}
+const index: React.FC<HeadProps> = ({
+	hairPiece,
+	facePiece,
+	facialHairPiece,
+	accessoryPiece,
+	strokeColor,
+	backgroundColor
+}) => {
+	return (
+		<g transform='translate(225 0)'>
+			<g>
+				{hairPiece &&
+					React.createElement(Hair, {
+						piece: hairPiece,
+						strokeColor,
+						backgroundColor
+					})}
+			</g>
+			<g transform='translate(159 186)'>
+				{facePiece &&
+					React.createElement(Face, {
+						piece: facePiece,
+						strokeColor,
+						backgroundColor
+					})}
+			</g>
+			<g transform='translate(123 338)'>
+				{facialHairPiece &&
+					React.createElement(FacialHair, {
+						piece: facialHairPiece,
+						strokeColor,
+						backgroundColor
+					})}
+			</g>
+			<g transform='translate(47 241)'>
+				{accessoryPiece &&
+					React.createElement(Accessory, {
+						piece: accessoryPiece,
+						strokeColor,
+						backgroundColor
+					})}
+			</g>
+		</g>
+	);
+};
 
-export default index
+export default index;

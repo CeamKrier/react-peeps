@@ -15,11 +15,11 @@ import { SittingPoseType } from './pose/sitting/z_options';
 import { BustPoseType } from './pose/bust/z_options';
 interface PeepProps {
     style?: CSSProperties;
-    accessory?: React.ElementType<AccessoryType>;
-    body?: React.ElementType<BustPoseType | SittingPoseType | StandingPoseType>;
-    face?: React.ElementType<FaceType>;
-    facialHair?: React.ElementType<FacialHairType>;
-    hair?: React.ElementType<HairType>;
+    accessory?: AccessoryType;
+    body?: BustPoseType | SittingPoseType | StandingPoseType;
+    face?: FaceType;
+    facialHair?: FacialHairType;
+    hair?: HairType;
     viewBox?: {
         x: string;
         y: string;
@@ -27,7 +27,8 @@ interface PeepProps {
         height: string;
     };
     circleStyle?: CSSProperties;
+    strokeColor?: string;
+    backgroundColor?: string;
 }
 declare const Peep: React.FC<PeepProps>;
-export declare const CirclePeep: React.FC<PeepProps>;
 export default Peep;

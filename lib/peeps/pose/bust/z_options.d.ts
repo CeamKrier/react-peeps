@@ -1,7 +1,10 @@
 /// <reference types="react" />
 export declare const BustPose: {
     BlazerBlackTee: () => JSX.Element;
-    Shirt: () => JSX.Element;
+    Shirt: import("react").FC<{
+        strokeColor?: string | undefined;
+        backgroundColor?: string | undefined;
+    }>;
     ButtonShirt: () => JSX.Element;
     Dress: () => JSX.Element;
     Gaming: () => JSX.Element;

@@ -1,15 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Peep, {
-	Accessories,
-	BustPose,
-	StandingPose,
-	SittingPose,
-	Face,
-	FacialHair,
-	Hair,
-	CirclePeep
-} from '../../lib/peeps/index';
+import Peep from '../../lib/peeps/index';
 
 const styles = {
 	peepStyle: {
@@ -29,12 +20,12 @@ const styles = {
 		borderWidth: 3,
 		borderColor: 'black',
 		borderStyle: 'solid'
-  },
-  showcaseWrapper: {
-    display: 'flex',
-    justifyContent: 'center',
-    height: '-webkit-fill-available'
-  }
+	},
+	showcaseWrapper: {
+		display: 'flex',
+		justifyContent: 'center',
+		height: '-webkit-fill-available'
+	}
 };
 
 const Showcase: React.FC = () => {
@@ -42,20 +33,25 @@ const Showcase: React.FC = () => {
 		<div style={styles.showcaseWrapper}>
 			<Peep
 				style={styles.peepStyle}
-				accessory={Accessories.GlassRoundThick}
-				body={StandingPose.EasingBW}
-				face={Face.Cute}
-				hair={Hair.ShortVolumed}
+				accessory='GlassRoundThick'
+				body='Shirt'
+				face='Cute'
+				hair='ShortVolumed'
+				facialHair='Dali'
+				strokeColor='#e6e6e6'
+				backgroundColor='red'
 			/>
 
-			<CirclePeep
+			<Peep
 				style={styles.peepStyle}
-				accessory={Accessories.GlassRoundThick}
-				body={StandingPose.EasingBW}
-				face={Face.Cute}
-				hair={Hair.ShortVolumed}
+				accessory='GlassRoundThick'
+				body='Shirt'
+				face='Cute'
+				hair='ShortVolumed'
+				facialHair='Dali'
+				strokeColor='#e6e6e6'
 				circleStyle={styles.circleStyle}
-				viewBox={{x: '0', y: '0', width: '1050', height: '1200'}}
+				viewBox={{ x: '0', y: '0', width: '1050', height: '1200' }}
 			/>
 		</div>
 	);
