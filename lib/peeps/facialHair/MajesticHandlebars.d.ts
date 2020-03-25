@@ -1,2 +1,3 @@
-/// <reference types="react" />
-export declare const MajesticHandlebars: () => JSX.Element;
+import React from 'react';
+import { PieceType } from '../types';
+export declare const MajesticHandlebars: React.FC<PieceType>;

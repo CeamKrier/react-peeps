@@ -1,2 +1,3 @@
-/// <reference types="react" />
-export declare const ShavedSides: () => JSX.Element;
+import React from 'react';
+import { PieceType } from '../types';
+export declare const ShavedSides: React.FC<PieceType>;

@@ -1,6 +1,7 @@
 import React from 'react';
+import { PieceType } from '../../types';
 
-export const Shirt: React.FC<{strokeColor?: string, backgroundColor?: string}> = ({ strokeColor, backgroundColor }) => {
+export const Shirt: React.FC<PieceType> = ({ strokeColor, backgroundColor }) => {
 	return (
 		<g transform='translate(0 459)'>
 			<path

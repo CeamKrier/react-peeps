@@ -38,20 +38,29 @@ const Showcase: React.FC = () => {
 				face='Cute'
 				hair='ShortVolumed'
 				facialHair='Dali'
-				strokeColor='#e6e6e6'
-				backgroundColor='red'
+				strokeColor='rgb(243, 211, 74)'
 			/>
 
 			<Peep
 				style={styles.peepStyle}
+				circleStyle={styles.circleStyle}
 				accessory='GlassRoundThick'
 				body='Shirt'
 				face='Cute'
 				hair='ShortVolumed'
 				facialHair='Dali'
-				strokeColor='#e6e6e6'
-				circleStyle={styles.circleStyle}
 				viewBox={{ x: '0', y: '0', width: '1050', height: '1200' }}
+			/>
+
+			<Peep
+				style={{...styles.peepStyle, transform: 'scale(-1, 1)'}}
+				accessory='GlassRoundThick'
+				body='Shirt'
+				face='Cute'
+				hair='ShortVolumed'
+				facialHair='Dali'
+				strokeColor='red'
+				backgroundColor='black'
 			/>
 		</div>
 	);

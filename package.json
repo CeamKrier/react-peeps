@@ -1,6 +1,6 @@
 {
   "name": "react-peeps",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React implementation of the hand drawn illustration library called Open Peeps",
   "main": "./lib/peeps/index.js",
   "types": "./lib/peeps/index.d.ts",

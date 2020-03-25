@@ -1,2 +1,3 @@
-/// <reference types="react" />
-export declare const ShirtBW: () => JSX.Element;
+import React from 'react';
+import { PieceType } from '../../types';
+export declare const ShirtBW: React.FC<PieceType>;

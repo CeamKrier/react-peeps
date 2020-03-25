@@ -1,2 +1,3 @@
-/// <reference types="react" />
-export declare const Solemn: () => JSX.Element;
+import React from 'react';
+import { PieceType } from '../types';
+export declare const Solemn: React.FC<PieceType>;

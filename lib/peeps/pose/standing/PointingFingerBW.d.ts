@@ -1,2 +1,3 @@
-/// <reference types="react" />
-export declare const PointingFingerBW: () => JSX.Element;
+import React from 'react';
+import { PieceType } from '../../types';
+export declare const PointingFingerBW: React.FC<PieceType>;
