@@ -1,4 +1,5 @@
 import React, { CSSProperties } from 'react';
+import { GradientType } from './types';
 export { BustPose, BustPoseType } from './pose/bust/z_options';
 export { SittingPose, SittingPoseType } from './pose/sitting/z_options';
 export { StandingPose, StandingPoseType } from './pose/standing/z_options';
@@ -27,8 +28,8 @@ interface PeepProps {
         height: string;
     };
     circleStyle?: CSSProperties;
-    strokeColor?: string;
-    backgroundColor?: string;
+    strokeColor?: string | GradientType;
+    backgroundColor?: string | GradientType;
 }
 declare const Peep: React.FC<PeepProps>;
 export default Peep;

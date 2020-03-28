@@ -71,6 +71,16 @@ const Showcase: React.FC = () => {
         strokeColor='#e6e6e6'
         viewBox={{ x: '0', y: '0', width: '1050', height: '1200' }}
       />
+
+      <Peep
+        style={{...styles.peepStyle, transform: 'scale(-1, 1)'}}
+        accessory='GlassRoundThick'
+        body='Shirt'
+        face='Cute'
+        hair='ShortVolumed'
+        facialHair='Dali'
+        strokeColor={{degree: 300, firstColor: '#2E8A57', secondColor: '#81087F'}}
+      />
     </div>
   );
 };
