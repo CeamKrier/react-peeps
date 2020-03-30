@@ -28,6 +28,9 @@ import { Rage } from './Rage';
 import { SmileBig } from './SmileBig';
 import { SmileLol } from './SmileLol';
 import { SmileTeeth } from './SmileTeeth';
+import { CalmNM } from './CalmNM';
+import { SmileNM } from './SmileNM';
+import { CheersNM } from './CheersNM';
 
 export const Face = {
 	Angry,
@@ -59,7 +62,10 @@ export const Face = {
 	Rage,
 	SmileBig,
 	SmileLol,
-	SmileTeeth
+	SmileTeeth,
+	CalmNM,
+	SmileNM,
+	CheersNM
 };
 
 export type FaceType =
@@ -92,4 +98,7 @@ export type FaceType =
 	| 'Rage'
 	| 'SmileBig'
 	| 'SmileLol'
-	| 'SmileTeeth';
+	| 'SmileTeeth'
+	| 'CalmNM'
+	| 'SmileNM'
+	| 'CheersNM';
