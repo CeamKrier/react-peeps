@@ -46,6 +46,9 @@ import { MediumShade } from './MediumShade';
 import { Turban } from './Turban';
 import { Twists } from './Twists';
 import { TwistsVolumed } from './TwistsVolumed';
+import { DocBouffant } from './DocBouffant';
+import { DocShield } from './DocShield';
+import { DocSurgery } from './DocSurgery';
 
 export const Hair = {
 	Afro,
@@ -95,7 +98,10 @@ export const Hair = {
 	MediumShade,
 	Turban,
 	Twists,
-	TwistsVolumed
+	TwistsVolumed,
+	DocBouffant,
+	DocSurgery,
+	DocShield
 };
 
 export type HairType =
@@ -146,4 +152,7 @@ export type HairType =
 	| 'MediumShade'
 	| 'Turban'
 	| 'Twists'
-	| 'TwistsVolumed';
+	| 'TwistsVolumed'
+	| 'DocBouffant'
+	| 'DocSurgery'
+	| 'DocShield';

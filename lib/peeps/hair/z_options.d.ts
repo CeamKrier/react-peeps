@@ -48,5 +48,8 @@ export declare const Hair: {
     Turban: import("react").FC<import("../types").PieceType>;
     Twists: import("react").FC<import("../types").PieceType>;
     TwistsVolumed: import("react").FC<import("../types").PieceType>;
+    DocBouffant: import("react").FC<import("../types").PieceType>;
+    DocSurgery: import("react").FC<import("../types").PieceType>;
+    DocShield: import("react").FC<import("../types").PieceType>;
 };
-export declare type HairType = 'Afro' | 'Bald' | 'BaldSides' | 'BaldTop' | 'Bangs' | 'BangsFilled' | 'Bear' | 'Bun' | 'BunCurly' | 'Buns' | 'FlatTop' | 'FlatTopLong' | 'HatHip' | 'Long' | 'LongAfro' | 'LongBangs' | 'LongCurly' | 'Medium' | 'MediumBangs' | 'MediumBangsFilled' | 'MediumLong' | 'MediumShort' | 'MediumStraight' | 'Mohawk' | 'MohawkDino' | 'Pomp' | 'ShavedRight' | 'ShavedSides' | 'ShavedWavy' | 'Short' | 'ShortCurly' | 'ShortMessy' | 'ShortScratch' | 'ShortVolumed' | 'ShortWavy' | 'BantuKnots' | 'Beanie' | 'BunFancy' | 'CornRows' | 'CornRowsFilled' | 'GrayBun' | 'GrayMedium' | 'GrayShort' | 'Hijab' | 'MediumShade' | 'Turban' | 'Twists' | 'TwistsVolumed';
+export declare type HairType = 'Afro' | 'Bald' | 'BaldSides' | 'BaldTop' | 'Bangs' | 'BangsFilled' | 'Bear' | 'Bun' | 'BunCurly' | 'Buns' | 'FlatTop' | 'FlatTopLong' | 'HatHip' | 'Long' | 'LongAfro' | 'LongBangs' | 'LongCurly' | 'Medium' | 'MediumBangs' | 'MediumBangsFilled' | 'MediumLong' | 'MediumShort' | 'MediumStraight' | 'Mohawk' | 'MohawkDino' | 'Pomp' | 'ShavedRight' | 'ShavedSides' | 'ShavedWavy' | 'Short' | 'ShortCurly' | 'ShortMessy' | 'ShortScratch' | 'ShortVolumed' | 'ShortWavy' | 'BantuKnots' | 'Beanie' | 'BunFancy' | 'CornRows' | 'CornRowsFilled' | 'GrayBun' | 'GrayMedium' | 'GrayShort' | 'Hijab' | 'MediumShade' | 'Turban' | 'Twists' | 'TwistsVolumed' | 'DocBouffant' | 'DocSurgery' | 'DocShield';

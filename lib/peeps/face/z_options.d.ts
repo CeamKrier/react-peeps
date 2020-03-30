@@ -30,5 +30,8 @@ export declare const Face: {
     SmileBig: import("react").FC<import("../types").PieceType>;
     SmileLol: import("react").FC<import("../types").PieceType>;
     SmileTeeth: import("react").FC<import("../types").PieceType>;
+    CalmNM: import("react").FC<import("../types").PieceType>;
+    SmileNM: import("react").FC<import("../types").PieceType>;
+    CheersNM: import("react").FC<import("../types").PieceType>;
 };
-export declare type FaceType = 'Angry' | 'Blank' | 'Calm' | 'Cheeky' | 'Concerned' | 'Contempt' | 'Cute' | 'Driven' | 'EatingHappy' | 'EyesClosed' | 'OldAged' | 'Serious' | 'Smile' | 'Solemn' | 'Suspicious' | 'Tired' | 'VeryAngry' | 'Awe' | 'ConcernedFear' | 'Cyclops' | 'Explaining' | 'Fear' | 'Hectic' | 'LoveGrin' | 'LoveGrinTeeth' | 'Monster' | 'Rage' | 'SmileBig' | 'SmileLol' | 'SmileTeeth';
+export declare type FaceType = 'Angry' | 'Blank' | 'Calm' | 'Cheeky' | 'Concerned' | 'Contempt' | 'Cute' | 'Driven' | 'EatingHappy' | 'EyesClosed' | 'OldAged' | 'Serious' | 'Smile' | 'Solemn' | 'Suspicious' | 'Tired' | 'VeryAngry' | 'Awe' | 'ConcernedFear' | 'Cyclops' | 'Explaining' | 'Fear' | 'Hectic' | 'LoveGrin' | 'LoveGrinTeeth' | 'Monster' | 'Rage' | 'SmileBig' | 'SmileLol' | 'SmileTeeth' | 'CalmNM' | 'SmileNM' | 'CheersNM';

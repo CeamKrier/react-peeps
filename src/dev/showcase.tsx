@@ -32,6 +32,14 @@ const Showcase: React.FC = () => {
 	return (
 		<div style={styles.showcaseWrapper}>
 			<Peep
+				style={{ ...styles.peepStyle }}
+				body='DocProtectiveClothe'
+				face='CalmNM'
+				hair='DocShield'
+				viewBox={{ x: '-20', y: '500', width: '1050', height: '2400' }}
+			/>
+
+			<Peep
 				style={styles.peepStyle}
 				accessory='GlassRoundThick'
 				body='Shirt'
@@ -47,18 +55,6 @@ const Showcase: React.FC = () => {
 			/>
 
 			<Peep
-				style={styles.peepStyle}
-				circleStyle={styles.circleStyle}
-				accessory='GlassRoundThick'
-				body='Shirt'
-				face='Cute'
-				hair='ShortVolumed'
-				facialHair='Dali'
-				viewBox={{ x: '-20', y: '0', width: '1050', height: '1200' }}
-				
-			/>
-
-			<Peep
 				style={{ ...styles.peepStyle, transform: 'scale(-1, 1)' }}
 				accessory='GlassRoundThick'
 				body='Shirt'
@@ -70,6 +66,14 @@ const Showcase: React.FC = () => {
 					firstColor: '#2E8A57',
 					secondColor: '#81087F'
 				}}
+			/>
+
+			<Peep
+				style={{ ...styles.peepStyle, transform: 'scale(-1, 1)' }}
+				body='DocStethoscope'
+				face='SmileNM'
+				hair='DocSurgery'
+				viewBox={{ x: '-20', y: '500', width: '1050', height: '2400' }}
 			/>
 		</div>
 	);

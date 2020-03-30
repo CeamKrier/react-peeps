@@ -23,5 +23,8 @@ export declare const StandingPose: {
     WalkingBW: import("react").FC<import("../../types").PieceType>;
     WalkingFilled: import("react").FC<import("../../types").PieceType>;
     WalkingWB: import("react").FC<import("../../types").PieceType>;
+    Doc: import("react").FC<import("../../types").PieceType>;
+    DocProtectiveClothe: import("react").FC<import("../../types").PieceType>;
+    DocStethoscope: import("react").FC<import("../../types").PieceType>;
 };
-export declare type StandingPoseType = "BlazerBW" | "BlazerPantsBW" | "BlazerPantsWB" | "BlazerWB" | "CrossedArmsBW" | "CrossedArmsWB" | "EasingBW" | "EasingWB" | "PointingFingerBW" | "PointingFingerWB" | "PolkaDots" | "RestingBW" | "RestingWB" | "RoboDanceBW" | "RoboDanceOutline" | "RoboDanceWB" | "ShirtBW" | "ShirtPantsBW" | "ShirtPantsWB" | "ShirtWB" | "WalkingBW" | "WalkingFilled" | "WalkingWB";
+export declare type StandingPoseType = 'BlazerBW' | 'BlazerPantsBW' | 'BlazerPantsWB' | 'BlazerWB' | 'CrossedArmsBW' | 'CrossedArmsWB' | 'EasingBW' | 'EasingWB' | 'PointingFingerBW' | 'PointingFingerWB' | 'PolkaDots' | 'RestingBW' | 'RestingWB' | 'RoboDanceBW' | 'RoboDanceOutline' | 'RoboDanceWB' | 'ShirtBW' | 'ShirtPantsBW' | 'ShirtPantsWB' | 'ShirtWB' | 'WalkingBW' | 'WalkingFilled' | 'WalkingWB' | 'Doc' | 'DocProtectiveClothe' | 'DocStethoscope';
