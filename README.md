@@ -14,6 +14,8 @@ npm install react-peeps
 
 [![Edit react-peeps-playground](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/react-peeps-playground-mbtlj?fontsize=14&hidenavigation=1&theme=dark)
 
+Web generator available at https://www.opeeps.fun 
+
 ## Usage
 
 ```javascript
