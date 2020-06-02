@@ -4,6 +4,7 @@ export interface PieceType {
 }
 
 export type GradientType = {
+	type?: 'RadialGradient' | 'LinearGradient';
 	degree?: number;
 	firstColor: string;
 	secondColor: string;

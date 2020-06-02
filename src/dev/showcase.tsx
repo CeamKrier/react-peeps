@@ -8,7 +8,7 @@ const styles = {
 		height: 300,
 		justifyContent: 'center',
 		alignSelf: 'center',
-		overflow: 'initial'
+		overflow: 'initial',
 	},
 	circleStyle: {
 		backgroundColor: '#F3D34A',
@@ -19,13 +19,13 @@ const styles = {
 		overflow: 'hidden',
 		borderWidth: 3,
 		borderColor: 'black',
-		borderStyle: 'solid'
+		borderStyle: 'solid',
 	},
 	showcaseWrapper: {
 		display: 'flex',
 		justifyContent: 'center',
-		height: '-webkit-fill-available'
-	}
+		height: '-webkit-fill-available',
+	},
 };
 
 const Showcase: React.FC = () => {
@@ -51,7 +51,12 @@ const Showcase: React.FC = () => {
 					backgroundColor={{
 						degree: 310,
 						firstColor: '#FF0015',
-						secondColor: 'gold'
+						secondColor: 'gold',
+					}}
+					wrapperBackground={{
+						degree: 310,
+						firstColor: 'gold',
+						secondColor: '#FF0015',
 					}}
 				/>
 
@@ -65,7 +70,13 @@ const Showcase: React.FC = () => {
 					strokeColor={{
 						degree: 300,
 						firstColor: '#2E8A57',
-						secondColor: '#81087F'
+						secondColor: '#81087F',
+					}}
+					wrapperBackground={{
+						degree: 300,
+						firstColor: '#81087F',
+						secondColor: '#2E8A57',
+						type: 'RadialGradient'
 					}}
 				/>
 

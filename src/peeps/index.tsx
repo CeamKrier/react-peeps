@@ -1,4 +1,4 @@
-import React, { CSSProperties } from 'react';
+import React, { CSSProperties, useMemo } from 'react';
 import Head from './head';
 import Pose from './pose';
 import { GradientType } from './types';
@@ -30,6 +30,7 @@ interface PeepProps {
 	circleStyle?: CSSProperties;
 	strokeColor?: string | GradientType;
 	backgroundColor?: string | GradientType;
+	wrapperBackground?: string | GradientType;
 }
 
 const Peep: React.FC<PeepProps> = ({
@@ -42,33 +43,44 @@ const Peep: React.FC<PeepProps> = ({
 	viewBox,
 	circleStyle,
 	strokeColor,
-	backgroundColor
+	backgroundColor,
+	wrapperBackground,
 }) => {
 	let { x, y, width, height } = viewBox || {
 		x: 0,
 		y: 0,
 		width: 850,
-		height: 1200
+		height: 1200,
 	};
 
 	const adjustStrokeColor = () => {
 		return typeof strokeColor === 'object'
-			? 'url(#strokeGradient)'
+			? `url(#strokeGradient${uniqueIdentifier})`
 			: strokeColor;
 	};
 
 	const adjustBackgroundColor = () => {
 		return typeof backgroundColor === 'object'
-			? 'url(#backgroundGradient)'
+			? `url(#backgroundGradient${uniqueIdentifier})`
 			: backgroundColor;
 	};
+
+	const adjustWrapperBackground = () => {
+		return typeof wrapperBackground === 'object'
+			? `url(#wrapperGradient${uniqueIdentifier})`
+			: wrapperBackground;
+	};
+
+	const uniqueIdentifier = useMemo(() => {
+		return '_' + Math.random().toString(36).substr(2, 9)
+	}, [])
 
 	const mainContent = (
 		<svg style={style} viewBox={`${x} ${y} ${width} ${height}`}>
 			{typeof strokeColor === 'object' && (
 				<defs>
 					<linearGradient
-						id='strokeGradient'
+						id={`strokeGradient${uniqueIdentifier}`}
 						x1='0%'
 						y1='0%'
 						x2='50%'
@@ -82,7 +94,7 @@ const Peep: React.FC<PeepProps> = ({
 			{typeof backgroundColor === 'object' && (
 				<defs>
 					<linearGradient
-						id='backgroundGradient'
+						id={`backgroundGradient${uniqueIdentifier}`}
 						x1='0%'
 						y1='0%'
 						x2='50%'
@@ -93,12 +105,44 @@ const Peep: React.FC<PeepProps> = ({
 					</linearGradient>
 				</defs>
 			)}
+			{typeof wrapperBackground === 'object' &&
+				(wrapperBackground.type === 'RadialGradient' ? (
+					<defs>
+						<radialGradient
+							id={`wrapperGradient${uniqueIdentifier}`}>
+							<stop offset='0%' stop-color={wrapperBackground.firstColor} />
+							<stop offset='100%' stop-color={wrapperBackground.secondColor} />
+						</radialGradient>
+					</defs>
+				) : (
+					<defs>
+						<linearGradient
+							id={`wrapperGradient${uniqueIdentifier}`}
+							x1='0%'
+							y1='0%'
+							x2='50%'
+							y2='100%'
+							gradientTransform={`rotate(${wrapperBackground.degree || 0})`}>
+							<stop offset='0%' stop-color={wrapperBackground.firstColor} />
+							<stop offset='100%' stop-color={wrapperBackground.secondColor} />
+						</linearGradient>
+					</defs>
+				))}
+			{wrapperBackground && (
+				<rect
+					x={x}
+					y={y}
+					width='100%'
+					height='100%'
+					fill={adjustWrapperBackground()}
+					rx='30'></rect>
+			)}
 			<g>
 				{body &&
 					React.createElement(Pose, {
 						piece: body,
 						strokeColor: adjustStrokeColor(),
-						backgroundColor: adjustBackgroundColor()
+						backgroundColor: adjustBackgroundColor(),
 					})}
 				{React.createElement(Head, {
 					hairPiece: hair,
@@ -106,7 +150,7 @@ const Peep: React.FC<PeepProps> = ({
 					facialHairPiece: facialHair,
 					accessoryPiece: accessory,
 					strokeColor: adjustStrokeColor(),
-					backgroundColor: adjustBackgroundColor()
+					backgroundColor: adjustBackgroundColor(),
 				})}
 			</g>
 		</svg>
