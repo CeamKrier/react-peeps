@@ -101,9 +101,9 @@ ReactDOM.render(<Showcase />, document.getElementById('main'));
 |              hair | string                                                           | Defines the picked hair type                                  | No       |
 |             style | CSSProperties                                                    | Style of the SVG element                                      | No       |
 |       circleStyle | CSSProperties                                                    | Wraps the SVG into a div element and passes style to that div | No       |
-|       strokeColor | string | GradientType                                            | Defines the stroke color of lines                             | No       |
-|   backgroundColor | string | GradientType                                            | Defines the background color of the peep's pieces             | No       |
-| wrapperBackground | string | GradientType                                            | Defines the background of SVG                                 | No       |
+|       strokeColor | string \| GradientType                                           | Defines the stroke color of lines                             | No       |
+|   backgroundColor | string \| GradientType                                           | Defines the background color of the peep's pieces             | No       |
+| wrapperBackground | string \| GradientType                                           | Defines the background of SVG                                 | No       |
 |           viewBox | {   x: string;   y: string;   width: string;   height: string; } | Defines the viewable dimensions of the SVG                    | No       |
 
 ## Contributing
