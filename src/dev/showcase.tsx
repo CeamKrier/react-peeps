@@ -24,7 +24,8 @@ const styles = {
 	showcaseWrapper: {
 		display: 'flex',
 		justifyContent: 'center',
-		height: '-webkit-fill-available',
+		marginTop: '5%',
+		marginBottom: '5%'
 	},
 };
 
