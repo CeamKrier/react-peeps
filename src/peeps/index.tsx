@@ -86,8 +86,8 @@ const Peep: React.FC<PeepProps> = ({
 						x2='50%'
 						y2='100%'
 						gradientTransform={`rotate(${strokeColor.degree || 0})`}>
-						<stop offset='0%' stop-color={strokeColor.firstColor} />
-						<stop offset='100%' stop-color={strokeColor.secondColor} />
+						<stop offset='0%' stopColor={strokeColor.firstColor} />
+						<stop offset='100%' stopColor={strokeColor.secondColor} />
 					</linearGradient>
 				</defs>
 			)}
@@ -100,8 +100,8 @@ const Peep: React.FC<PeepProps> = ({
 						x2='50%'
 						y2='100%'
 						gradientTransform={`rotate(${backgroundColor.degree || 0})`}>
-						<stop offset='0%' stop-color={backgroundColor.firstColor} />
-						<stop offset='100%' stop-color={backgroundColor.secondColor} />
+						<stop offset='0%' stopColor={backgroundColor.firstColor} />
+						<stop offset='100%' stopColor={backgroundColor.secondColor} />
 					</linearGradient>
 				</defs>
 			)}
@@ -110,8 +110,8 @@ const Peep: React.FC<PeepProps> = ({
 					<defs>
 						<radialGradient
 							id={`wrapperGradient${uniqueIdentifier}`}>
-							<stop offset='0%' stop-color={wrapperBackground.firstColor} />
-							<stop offset='100%' stop-color={wrapperBackground.secondColor} />
+							<stop offset='0%' stopColor={wrapperBackground.firstColor} />
+							<stop offset='100%' stopColor={wrapperBackground.secondColor} />
 						</radialGradient>
 					</defs>
 				) : (
@@ -123,8 +123,8 @@ const Peep: React.FC<PeepProps> = ({
 							x2='50%'
 							y2='100%'
 							gradientTransform={`rotate(${wrapperBackground.degree || 0})`}>
-							<stop offset='0%' stop-color={wrapperBackground.firstColor} />
-							<stop offset='100%' stop-color={wrapperBackground.secondColor} />
+							<stop offset='0%' stopColor={wrapperBackground.firstColor} />
+							<stop offset='100%' stopColor={wrapperBackground.secondColor} />
 						</linearGradient>
 					</defs>
 				))}
