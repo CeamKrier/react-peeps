@@ -14,6 +14,9 @@ npm install react-peeps
 
 [![Edit react-peeps-playground](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/react-peeps-playground-mbtlj?fontsize=14&hidenavigation=1&theme=dark)
 
+
+<a href="https://www.buymeacoffee.com/ceamkrier"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=ceamkrier&button_colour=f9d366&font_colour=000000&font_family=Comic&outline_colour=000000&coffee_colour=FFDD00"></a>
+
 Web generator available at https://www.opeeps.fun 
 
 ## Usage
